@@ -1,31 +1,70 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!doctype html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>juan_matias/dev</title>
-  <meta name="description" content="Juan Matias Repetti Personal Blob">
-  <meta name="author" content="Juan Matias Repett">
-  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/libs/jquery-1.6.2.min.js"></script>
+<title>simple_cursor</title>
+<style>
+  /* Blinking cursor */
+  /* https://gist.github.com/navinpai/2902229 */
+  html {
+    background: #111;
+  }
+
+  body {
+    color: #090;
+    font-family: Courier New, Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+
+    -webkit-font-smoothing: antialiased;
+  }
+
+  div.cursor {
+    display: inline-block;
+    background: #111;
+    margin-left: 1px;
+
+    -webkit-animation: blink 2s linear 0s infinite;
+    -moz-animation: blink 2s linear 0s infinite;
+    -ms-animation: blink 2s linear 0s infinite;
+    -o-animation: blink 2s linear 0s infinite;
+  }
+  @-webkit-keyframes blink {
+    0%   { background: #0a0 }
+    47%  { background: #090 }
+    50%  { background: #000 }
+    97%  { background: #000 }
+    100% { background: #090 }
+  }
+
+  @-moz-keyframes blink {
+    0%   { background: #0a0 }
+    47%  { background: #090 }
+    50%  { background: #000 }
+    97%  { background: #000 }
+    100% { background: #090 }
+  }
+
+  @-ms-keyframes blink {
+    0%   { background: #0a0 }
+    47%  { background: #090 }
+    50%  { background: #000 }
+    97%  { background: #000 }
+    100% { background: #090 }
+  }
+
+  @-o-keyframes blink {
+    0%   { background: #0a0 }
+    47%  { background: #090 }
+    50%  { background: #000 }
+    97%  { background: #000 }
+    100% { background: #090 }
+  }
+</style>
 </head>
-
 <body>
-    <div class="container-fluid">
-      <div class="sidebar">
-      </div>
-      <div class="content">
-        <div class='row'>
-          <div class='span12'>
-            <h1>juan_matias/dev_</h1>
-            <p><strong>Trying Github pages</strong></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<pre>
+  jmrepetti@github.io:~$ <div class="cursor"> </div>
+</pre>
+</body>
 </html>
