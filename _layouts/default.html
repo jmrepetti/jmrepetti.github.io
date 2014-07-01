@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+    <div class="page-content pure-g">
+      <div class="pure-u-1-5"></div>
+      <div class="wrap pure-u-3-5">
+      {{ content }}
+      </div>
+      <div class="pure-u-1-5"></div>      
+    </div>
+    <div class="page-content pure-g">
+      <div class="pure-u-1">
+        {% include footer.html %}
+      </div>
+    </div>
+    </body>
+</html>

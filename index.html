@@ -1,70 +1,16 @@
-<!doctype html>
-<html>
-<head>
-<title>simple_cursor</title>
-<style>
-  /* Blinking cursor */
-  /* https://gist.github.com/navinpai/2902229 */
-  html {
-    background: #111;
-  }
+---
+layout: default
+---
 
-  body {
-    color: #090;
-    font-family: Courier New, Courier, monospace;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 16px;
+<div class="home">
 
-    -webkit-font-smoothing: antialiased;
-  }
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-  div.cursor {
-    display: inline-block;
-    background: #111;
-    margin-left: 1px;
-
-    -webkit-animation: blink 2s linear 0s infinite;
-    -moz-animation: blink 2s linear 0s infinite;
-    -ms-animation: blink 2s linear 0s infinite;
-    -o-animation: blink 2s linear 0s infinite;
-  }
-  @-webkit-keyframes blink {
-    0%   { background: #0a0 }
-    47%  { background: #090 }
-    50%  { background: #000 }
-    97%  { background: #000 }
-    100% { background: #090 }
-  }
-
-  @-moz-keyframes blink {
-    0%   { background: #0a0 }
-    47%  { background: #090 }
-    50%  { background: #000 }
-    97%  { background: #000 }
-    100% { background: #090 }
-  }
-
-  @-ms-keyframes blink {
-    0%   { background: #0a0 }
-    47%  { background: #090 }
-    50%  { background: #000 }
-    97%  { background: #000 }
-    100% { background: #090 }
-  }
-
-  @-o-keyframes blink {
-    0%   { background: #0a0 }
-    47%  { background: #090 }
-    50%  { background: #000 }
-    97%  { background: #000 }
-    100% { background: #090 }
-  }
-</style>
-</head>
-<body>
-<pre>
-  jmrepetti@github.io:~$ <div class="cursor"> </div>
-</pre>
-</body>
-</html>
+</div>

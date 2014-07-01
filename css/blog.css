@@ -1,0 +1,55 @@
+body {
+}
+
+h1,h2,h3 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+/*  font-family: Georgia,"Times New Roman",Times,serif;*/
+  
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+
+p {
+   font-family: Georgia,"Times New Roman",Times,serif; 
+}
+
+p.meta {
+  font-size: 0.8em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #aaa; 
+}
+
+pre {
+  background-color: lavender;
+  padding: 5px;
+}
+
+header.site-header {
+  background-color:black;
+  color:white;
+  padding:10px;  
+}
+
+header.site-header  a {
+  text-decoration:none;
+  color:white;
+}
+
+footer.site-footer {
+  background-color:black;
+  color:white;
+  text-align: center;
+  padding:10px;  
+}
+
+footer.site-footer a {
+  text-decoration:none;
+  color:white;
+}
