@@ -2,7 +2,7 @@
 title: ~jmrepetti
 email: ""
 description: ""
-baseurl: "jmrepetti.github.io"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
