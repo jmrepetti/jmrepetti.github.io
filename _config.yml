@@ -1,9 +1,8 @@
 # Site settings
-title: Juan Matias uber den Linden
-email: jmrepetti@gmail.com
-description: ""
-baseurl: ""
-url: "http://udlinden.com"
+title: ~jmrepetti
+email: 
+description:
+baseurl: 
 
 # Build settings
 markdown: kramdown
