@@ -1,8 +1,5 @@
 # Site settings
 title: ~jmrepetti
-email: 
-description:
-baseurl: 
 
 # Build settings
 markdown: kramdown
