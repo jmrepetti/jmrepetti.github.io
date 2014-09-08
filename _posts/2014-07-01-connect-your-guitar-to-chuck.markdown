@@ -41,7 +41,7 @@ a lot of code examples that yuo can learn from.
 
 ## Running Chuck code
 
-If you are in MiniAudicle, yuo can paste the previos example in MiniAudicle editor windows, start the Virtual Machine and press the "Add Shred"
+If you are in MiniAudicle, you can paste the previos example in MiniAudicle editor windows, start the Virtual Machine and press the "Add Shred"
 button to execute the program. 
 To load examples that came with MiniAudicle,  go to File > Open Example, or browse to /Applications/miniAudicle.app/Contents/Resources/examples
 if you are in OSX.

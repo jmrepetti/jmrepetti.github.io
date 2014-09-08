@@ -1,8 +1,8 @@
 # Site settings
 title: ~jmrepetti
 email: ""
-description: ""
-baseurl: "jmrepetti.github.io"
+description: "Personal blog about programming, music and everything."
+baseurl: ""
 
 # Build settings
 markdown: kramdown

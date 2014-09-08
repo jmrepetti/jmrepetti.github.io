@@ -1,4 +1,12 @@
-body {
+html, body {
+  height:100%;
+
+}
+
+#wrapper {
+  width: 775px;
+  margin: auto;
+  height: 100%;
 }
 
 h1,h2,h3 {
@@ -12,12 +20,16 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 
 p {
-   font-family: Georgia,"Times New Roman",Times,serif; 
+  font: 16px/23px "Bookman",serif;
+  text-align: justify;
+/*    font-size: 0.9em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+   font-family: Georgia,"Times New Roman",Times,serif; */
 }
 
 p.meta {
@@ -27,30 +39,64 @@ p.meta {
 }
 
 pre {
-  background-color: lavender;
+  background-color: aliceblue;
   padding: 5px;
 }
 
-header.site-header {
-  background-color:black;
-  color:white;
-  padding:1px 1px 1px 10px;  
+
+#header  {
+  margin: auto;
+  text-align: center;
 }
 
-header.site-header  a {
+#header a {
   text-decoration:none;
-  color:white;
-  margin-left:10px;
 }
 
-footer.site-footer {
-  background-color:black;
+#header a:hover {
+  color:black;
+}
+
+#header a:visited {
+  color:black;
+}
+
+
+#header h1.title {
+  color:black;
+  font: 40px/23px "Bookman",serif;
+
+}
+
+
+/*#footer {
+  margin: auto;
+  background-color: #ddd;
+  width:960px;
   color:white;
   text-align: center;
-  padding:10px;  
 }
 
-footer.site-footer a {
+#footer  a {
   text-decoration:none;
   color:white;
+}*/
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  
+  font-size: 0.9em;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote p {
+  display: inline;
 }
