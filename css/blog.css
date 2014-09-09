@@ -1,7 +1,11 @@
 html, body {
   height:100%;
-
+  font: 16px/23px "Bookman",serif;
 }
+
+.pure-g [class*="pure-u"] {
+  font: 16px/23px "Bookman",serif;
+} 
 
 #wrapper {
   width: 775px;
@@ -43,10 +47,12 @@ pre {
   padding: 5px;
 }
 
+code {
+    font-size: 0.9em;
+}
 
 #header  {
-  margin: auto;
-  text-align: center;
+  margin-bottom:60px;
 }
 
 #header a {
@@ -62,12 +68,62 @@ pre {
 }
 
 
-#header h1.title {
+#header > .title {
+  text-align: center;
+  background-color: coral;  
+  width: 40%;
   color:black;
-  font: 40px/23px "Bookman",serif;
+}
+
+
+#header > .title h1 {
+  text-shadow: -1px 1px 0px #FFF;
+  font-family: monospace,serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+#header > .links {
+  text-align: right;
+  font-family: monospace,serif;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+#footer  {
+  text-align:center;
+}
+.content_links ul {
+  list-style: none outside none;
+}
+.content ul {
+  border:none;
+}
+
+/* POST */
+.post {
+  border-bottom:1px dotted grey;
+  margin-bottom:20px;
+}
+
+.post_header > h1 {
+  margin: 10px 0px 10px 0px;
+}
+.post_date {
+  color:grey;
+  text-transform: uppercase;
+  font-family: arial,sans-serif;
+  font-size: 0.9em;
+  font-weight:normal;
 
 }
 
+.post_link {
+  color: blue;
+  font: 16px/23px "Bookman",serif;
+  text-align:center;
+  
+}
 
 /*#footer {
   margin: auto;

@@ -6,17 +6,21 @@
   <body>
     <div id="wrapper" class="pure-g">
       {% include header.html %}
-    
-      <div class="page-content pure-g">
-        <div class="pure-u-1-5"></div>
-        <div class="wrap pure-u-3-5">
-        {{ content }}
-        </div>
-        <div class="pure-u-1-5"></div>      
-      </div>
-    
-    
-    </div>
-    
+
+      
+        {% for post in site.posts %}
+          <div class="post pure-g">
+            <div class="post_header pure-u-1">
+              <div class="post_date">{{ post.date | date: "%b %-d, %Y" }}</div>
+              <h1 class="post_title">{{ post.title }}</h1>
+            </div>
+            <div class="post_content pure-u-1">
+              {{ post.content }}
+            </div>
+          </div>
+        {% endfor %}
+
+      {% include footer.html %}
+    </div>    
   </body>
 </html>

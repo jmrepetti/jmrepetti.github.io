@@ -1,16 +1,24 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
+  {% include head.html %}
 
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-  {{ content }}
-  </article>
-
-</div>
+  <body>
+    <div id="wrapper" class="pure-g">
+      {% include header.html %}
+    
+      <div class="page-content pure-g">
+        <div class="wrap pure-u-1">
+          <h1 class="post_title">{{ page.title }}</h1>
+          <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        </div>
+        <div class="wrap pure-u-1">
+        {{ content }}
+        </div>
+      </div>
+    
+    
+    </div>
+    
+  </body>
+</html>

@@ -1,11 +1,8 @@
 ---
-layout: post
 title:  "Connecting your guitar to Chuck"
 date:   2014-07-01
 categories: en
 ---
-
-## ¿What is Chuck? 
 
 [Chuck](http://chuck.cs.princeton.edu/) is a concurrent, strongly-typed, 
 strongly-timed, programming language for real-time sound synthesis and 
