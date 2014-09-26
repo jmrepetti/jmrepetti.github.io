@@ -1,8 +1,8 @@
 ---
 layout: default
-title:  "Connecting your guitar to Chuck"
-date:   2014-07-01
-categories: programming
+title:  "Screen cheatsheet"
+date:   2014-02-01
+categories: howtos
 ---
 # {{page.title}}
 [Chuck](http://chuck.cs.princeton.edu/) is a concurrent, strongly-typed, 

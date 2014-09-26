@@ -1,26 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>~jmrepetti</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  {% include head.html %}
-
-  <body>
-    <div id="wrapper" class="pure-g">
-      {% include header.html %}
-
+      	<link rel="shortcut icon" href="images/favicon.ico">
       
-        {% for post in site.posts %}
-          <div class="post pure-g">
-            <div class="post_header pure-u-1">
-              <div class="post_date">{{ post.date | date: "%b %-d, %Y" }}</div>
-              <h1 class="post_title">{{ post.title }}</h1>
-            </div>
-            <div class="post_content pure-u-1">
-              {{ post.content }}
-            </div>
+        <link rel="author" href="humans.txt" />
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>        
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/stylesheets/skeleton.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <script src="/javascript/main.js"></script>
+    </head>
+    
+    <body>      
+      
+    	<div id="wrapper" class="container">
+      
+      	<div id="header" class="container">
+          <div id="location_date">
+            <a href="#location" id="location">Berlin</a>, <a href="#date" id="date">javascript is disabled :(</a>
           </div>
-        {% endfor %}
+          <div class="sixteen columns alpha" id="categories">
+              <ul class="menu">
+                <li><a class="category" href="/">home</a></li>
+                <li><a class="category" href="/about/">about me</a></li>                     
+                <li><a class="category" href="/archive/">archive</a></li>                
 
-      {% include footer.html %}
-    </div>    
-  </body>
+              </ul>            
+          </div>
+        </div>
+
+      	<div id="middle" class="container {{ page.section }} offset-by-three">
+          <div class="ten columns">
+            {{ content }}
+          </div>
+      	</div>
+      </div>
+      	<div id="footer" class="container">
+
+            <hr/>            
+            <ul class="menu">
+              <li><a class="contact" href="http://github.com/jmrepetti">g</a></li>              
+              <li><a class="contact" href="mailto:jmrepetti@gmail.com">@</a></li>              
+              <li><a class="contact" href="http://twitter.com/jmrepetti">t</a></li>
+            </ul>            
+        </div>        
+    </body>
 </html>
+
+

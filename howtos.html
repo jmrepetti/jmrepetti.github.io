@@ -1,0 +1,18 @@
+---
+layout: default
+title: Howtos
+permalink: /howtos/
+---
+
+{% for post in site.posts %}
+  {% if post.section == 'howtos' %}
+    <div class="container offset-by-five">
+      <div class="two columns alpha post_date">
+        {{ post.date | date: "%b %-d, %Y" }}
+      </div>
+      <div class="six columns alpha post_link"> 
+        <a class="post_link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

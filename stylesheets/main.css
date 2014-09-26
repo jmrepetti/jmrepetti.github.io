@@ -1,0 +1,175 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+html, body {
+  color:black;
+  height:100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+a {
+  text-decoration:none;
+  outline: 0;
+}
+
+a:visited {
+  color:inherit;
+}
+
+a:hover {
+  color:inherit;
+}
+
+pre {
+  padding:10px;
+  background-color: rgba(246, 244, 244, 1);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul.menu li { display: inline; }
+
+ul.menu li a:visited {
+  color:inherit;
+}
+
+ul.menu li a.category:hover {
+  color:inherit;
+  background-color:lightblue;
+}
+
+ul.menu li a { 
+  text-decoration:none;
+  color:inherit;
+  margin:0 10px 0 10px;
+  border-radius: 5px;
+  padding: 4px 6px 4px 6px;
+  outline: 0;
+}
+ul.menu li a.contact { 
+  text-decoration: underline;
+}
+
+
+.post_date {
+  color:darkgrey;
+}
+
+.post_link a {
+  color:cornflowerblue;
+}
+
+
+#wrapper {
+  min-height: 85%;
+  /* equal to footer height */
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+}
+
+
+#location_date, #categories, #footer {
+  text-align: center;
+}
+
+#footer {  
+  height:75px;
+  font: 18px/30px "Roboto",sans-serif;
+  text-transform: uppercase;
+}
+
+#footer ul.menu{
+  height:75px;
+}
+
+#location_date a {
+  text-decoration:none;
+  outline: 0;
+  color:black;
+}
+
+#location_date a:visited {
+  color:inherit;
+}
+
+#location_date a:hover {
+  color:inherit;
+  text-decoration: underline;
+}
+
+#header {
+   padding-top: 3%;
+   font: 25px/37px "Georgia","Times New Roman",Helvetica,Arial,sans-serif;
+}
+
+#categories {
+  font: 18px/30px 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin-top:30px;
+}
+.about {
+  text-align:center;
+}
+#middle {
+  font: 1em/1.6em "Georgia","Times New Roman",Helvetica,Arial,sans-serif;  
+  padding-top: 6%;
+}
+
+
+
+
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
