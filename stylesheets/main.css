@@ -49,138 +49,34 @@ ul {
 }
 ul.menu li { display: inline; }
 
-ul.menu li a:visited {
-  color:inherit;
-}
-
-ul.menu li a.category:hover {
-  color:inherit;
-  background-color:lightblue;
-}
-
 ul.menu li a { 
-  text-decoration:none;
   color:inherit;
   margin:0 10px 0 10px;
   border-radius: 5px;
   padding: 4px 6px 4px 6px;
-  outline: 0;
 }
 ul.menu li a.contact { 
   text-decoration: underline;
 }
 
-
-.post_date {
-  color:darkgrey;
+#middle, #footer {
+    text-align: center;
 }
-
-.post_link a {
-  color:cornflowerblue;
+#contact h2 {
+  float:left;  
+  margin:10px;
+  color:gainsboro;
 }
-
-
-#wrapper {
-/*  min-height: 85%;*/
-  /* equal to footer height */
-}
-
-#wrapper:after {
-  content: "";
-  display: block;
-}
-
-#location_date {
-  font: 25px/37px "Georgia","Times New Roman",Helvetica,Arial,sans-serif;
-  
-}
-#location_date, #categories, #footer {
-  text-align: center;
-}
-
 #contact {
   font: 18px/30px "Roboto",sans-serif;
-  text-transform: uppercase;
-  margin-top:0;
+  text-transform: uppercase;  
+  margin-top:30px;
   text-align: right;
 }
 
-#footer {  
-  height:75px;
-  font: 18px/30px "Roboto",sans-serif;
-  text-transform: uppercase;
-  margin-top:5%;
-}
 
-#footer ul.menu{
-  height:75px;
-}
-
-#location_date a {
-  text-decoration:none;
-  outline: 0;
-  color:black;
-}
-
-#location_date a:visited {
-  color:inherit;
-}
-
-#location_date a:hover {
-  color:inherit;
-  text-decoration: underline;
-}
-
-#header {
-   padding-top: 3%;
-}
-
-#categories {
-  font: 18px/30px 'Roboto', sans-serif;
-  text-transform: uppercase;
-  margin-top:30px;
-}
-.about {
-  text-align:center;
-}
 #middle {
   margin-top:15%;
-  font: 1em/1.6em "Georgia","Times New Roman",Helvetica,Arial,sans-serif;  
   padding-top: 6%;
 }
 
-
-
-
-
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
